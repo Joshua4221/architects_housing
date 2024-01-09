@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+}
+
+.flexAlignSpaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexAlignJustifyCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0px 0px 8px 4px #00000021;
+  padding: 8px 14px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+
+.navbarLogo {
+  padding: 6px 18px;
+}
+
+.navbarLogo:hover {
+  background-color: #00000029;
+  cursor: pointer;
+}
+
+.navbarLogo h3 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #000000;
+  letter-spacing: 5px;
+}
+
+.navbarLogo h3 span {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #000000;
+}
+
+.navLinks {
+  gap: 30px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 23px;
+  color: #000000;
+  letter-spacing: 5px;
+  padding: 6px 18px;
+}
+
+.navLinks a:hover {
+  background-color: #00000029;
+  cursor: pointer;
+}
