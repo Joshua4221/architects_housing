@@ -40,6 +40,15 @@ body {
   padding: 6px 18px;
 }
 
+.nav_menu_icon {
+  width: 50px;
+  display: none;
+}
+
+.nav_menu_icon img {
+  width: 100%;
+}
+
 .navbarLogo:hover {
   background-color: #00000029;
   cursor: pointer;
@@ -125,7 +134,7 @@ body {
   padding: 45px 40px 5px 40px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 50px;
 }
 
 .project_section {
@@ -145,7 +154,7 @@ body {
 }
 
 .project_content {
-  padding: 45px 0px;
+  padding: 45px 0px 10px 0px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -322,4 +331,135 @@ body {
   line-height: 23px;
   font-weight: 400;
   color: #000;
+}
+
+.contact_info {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.contact_info button {
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  padding: 8px 16px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.contact_info_input_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact_info_input {
+  width: 100%;
+  outline: none;
+  border: 2px solid #808080a1;
+  padding: 8px 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 23px;
+}
+
+.contact_info_input::placeholder {
+  color: #757575;
+}
+
+.contact_info_input:focus {
+  border: 2px solid #000000;
+}
+
+.fotter_hero_Section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.fotter_hero_Section img {
+  width: 100%;
+}
+
+.fotter_section {
+  background-color: #000;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.fotter_section p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 23px;
+}
+
+.fotter_section p a {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 23px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1106px) {
+  .hero_section {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .project_detail {
+    width: 32%;
+  }
+
+  .about_us_card {
+    width: 32%;
+  }
+}
+
+@media (max-width: 720px) {
+  .nav_menu_icon {
+    display: block;
+  }
+
+  .navLinks {
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    top: 60px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 30px 15px;
+    display: none;
+  }
+
+  .about_us_card {
+    width: 44%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .project_detail {
+    width: 44%;
+  }
+
+  .about_us_card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .project_detail {
+    width: 100%;
+  }
 }
